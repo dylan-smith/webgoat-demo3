@@ -22,7 +22,7 @@ jobs:
           java-package: jdk
           architecture: x64
         
-      - name: CodeQL Initialze
+      - name: CodeQL Initialize
         uses: github/codeql-action/init@v1
         with:
           tools: https://github.com/advanced-security-demo/custom-codeql-bundle/releases/download/codeql-bundle-20220214-9e3033d/codeql-bundle.tar.gz
