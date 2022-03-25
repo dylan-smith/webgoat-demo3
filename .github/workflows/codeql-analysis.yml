@@ -1,10 +1,6 @@
 name: "CodeQL"
 on:
   workflow_dispatch:
-    inputs:
-      bundle:
-        default: codeql-bundle-20220214-9e3033d
-        required: true
 
 permissions:
   actions: read
@@ -28,8 +24,6 @@ jobs:
         
       - name: CodeQL Initialize
         uses: github/codeql-action/init@v1
-        with:
-          tools: https://github.com/advanced-security-demo/custom-codeql-bundle/releases/download/${{ github.event.inputs.bundle }}/codeql-bundle.tar.gz
         
       - name: CodeQL Autobuild
         uses: github/codeql-action/autobuild@v1
