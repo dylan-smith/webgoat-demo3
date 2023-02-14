@@ -39,7 +39,7 @@ jobs:
           # Artifact name
           name: Sarif results
           # A file, directory or wildcard pattern that describes what to upload
-          path: "../results"
+          path: "/home/runner/work/WebGoat/results"
           # The desired behavior if no files are found using the provided path.
           
       - name: Upload SARIF results
